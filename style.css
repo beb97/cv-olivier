@@ -14,6 +14,7 @@ body {
     padding: 0;
     background-color: #FAFAFA;
     font: 12pt "Tahoma";
+    print-color-adjust: exact !important;
     -webkit-print-color-adjust: exact !important;
 }
 * {
@@ -166,7 +167,14 @@ border-bottom-right-radius: 3mm;
 
   .highlight {
     background-color: var(--light);
-    transform: skew(-5deg);
+    transform: skew(-7deg);
+    padding-left: 2mm;
+    padding-right: 2mm;
+  }
+
+  .highlight > *{
+    transform: skew(7deg);
+
   }
 
   .secondaire {
